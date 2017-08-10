@@ -1,0 +1,25 @@
+{
+  "name": "wxpayutils",
+  "version": "1.0.0",
+  "description": "微信支付常用工具库",
+  "main": "node-wxpay.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pengzhiqiang/node-wxpayutils.git"
+  },
+  "keywords": [
+    "微信",
+    "wechat",
+    "微信支付",
+    "签名"
+  ],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pengzhiqiang/node-wxpayutils/issues"
+  },
+  "homepage": "https://github.com/pengzhiqiang/node-wxpayutils#readme"
+}
