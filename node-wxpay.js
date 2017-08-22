@@ -48,7 +48,6 @@ module.exports = {
         }
         xml = "<xml>" + items.join("") + "</xml>";
         return xml;
-    },
-    test:()=>console.log(module)
+    }
 
 }
