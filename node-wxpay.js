@@ -5,7 +5,7 @@ module.exports = {
     MD5: (string) => {
         return crypto.createHash('md5').update(string).digest('hex');
     },
-    
+
     //生成签名(sign)
     createSign: (obj, key) => {
         let keyArr = [];
@@ -19,7 +19,7 @@ module.exports = {
             stringA += keyArr[index] + "=" + obj[keyArr[index]] + '&'
         }
         let stringB = stringA + "key=" + key;
-        return MD5(stringB).toUpperCase();
+        return module.exports.MD5(stringB).toUpperCase();
     },
 
     //生成随机串(nonce_str)
@@ -48,6 +48,7 @@ module.exports = {
         }
         xml = "<xml>" + items.join("") + "</xml>";
         return xml;
-    }
+    },
+    test:()=>console.log(module)
 
 }
